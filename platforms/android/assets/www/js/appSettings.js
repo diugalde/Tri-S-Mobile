@@ -5,6 +5,6 @@
 */
 
 var appSettings = {
-	postBaseURL: 'https://tri-s.herokuapp.com',
-	submitURL: '/request'
+	postBaseURL: 'http://ws.tec.siua.ac.cr',
+	submitURL: '/mobileRequest'
 }

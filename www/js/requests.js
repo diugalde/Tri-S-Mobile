@@ -28,7 +28,7 @@ var ready = function() {
 				'Content-Type': 'application/json'
 			}
 		}).success(function(data) {
-			console.log(data);
+			$("#loading-div").removeClass("show-loading");
 			generateNotification(data.type, data.msg);
 			if(data.type === "success") {
 				$clickedForm.trigger("reset");
@@ -36,9 +36,9 @@ var ready = function() {
 			}
 			else highlightWrongFields($clickedForm, data.wrongFields.split(","));
 		}).fail(function(data) {
+			$("#loading-div").removeClass("show-loading");
 			generateNotification("error", "Hubo un error al enviar el formulario.");
 		}).always(function() {
-			$("#loading-div").removeClass("show-loading");
 			$("html, body").animate({ scrollTop: 0 }, "slow");
 		});
 
