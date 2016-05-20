@@ -1,2 +1,3 @@
 # Tri-S-Mobile
-Aplicación móvil para realizar solicitudes del Centro Académico de Alajuela - ITCR.
+
+Aplicación móvil del software [TRI-S] (https://github.com/diugalde/Tri-S). Permite realizar las solicitudes desde un dispositivo móvil. Utiliza tecnologías web (HTML5, JS y CSS3), compilado para Android con Phonegap.
